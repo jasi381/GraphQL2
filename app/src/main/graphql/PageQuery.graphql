@@ -1,0 +1,17 @@
+query BootStrap(
+    $device: Device!,
+    $domain: String,
+    $siteId: String,
+    $country: String,
+    $language: String
+) {
+    bootstrap(
+        device: $device
+        domain: $domain
+        siteId: $siteId
+        country: $country
+        language: $language
+    ) {
+        countryCode
+    }
+}
