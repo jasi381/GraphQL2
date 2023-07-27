@@ -13,5 +13,6 @@ query BootStrap(
         language: $language
     ) {
         countryCode
+        __typename
     }
 }

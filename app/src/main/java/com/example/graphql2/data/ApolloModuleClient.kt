@@ -8,7 +8,7 @@ import com.example.type.Device
 class ApolloModuleClient(
     private val apolloClient: ApolloClient
 ) : BootStrapQueryClient {
-    override suspend fun countryCode(): String? {
+    override suspend fun countryCode(): String {
 
 
         return apolloClient
